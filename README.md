@@ -1,7 +1,7 @@
 # music-through-the-ages
 A journey through the eras of time...From the moment the first stone was bashed against another to make a sound, to the digital era of today. Music plays such a big role in a lot of peoples lives. This an image-based journey, an exploration, through its history.
 
-Website created with django. 
+Website created with Django. 
 
 ### Launching Dev Environment with Terminal
 ```bash
