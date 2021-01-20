@@ -149,4 +149,7 @@ musicthroughtheages/musicthroughtheages/secret_key.py
 passenger_wsgi.py
 passenger_wsgi.pyc
 
+# admin
+public/static/admin
+
 # End of https://www.toptal.com/developers/gitignore/api/python
