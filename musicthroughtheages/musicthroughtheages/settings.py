@@ -146,4 +146,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # * STATIC_ROOT for both server and localhost -- dev purposes
 # STATIC_ROOT = '/home/dh_e658j5/musicthroughtheages.com/public/static/' 
-STATIC_ROOT = '../../public/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
