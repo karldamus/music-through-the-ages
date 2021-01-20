@@ -145,4 +145,8 @@ dmypy.json
 # secret
 musicthroughtheages/musicthroughtheages/secret_key.py
 
+# passenger
+passenger_wsgi.py
+passenger_wsgi.pyc
+
 # End of https://www.toptal.com/developers/gitignore/api/python
