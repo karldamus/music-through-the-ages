@@ -151,5 +151,6 @@ passenger_wsgi.pyc
 
 # admin
 public/static/admin
+musicthroughtheages/static/admin
 
 # End of https://www.toptal.com/developers/gitignore/api/python
