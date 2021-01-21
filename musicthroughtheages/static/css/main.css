@@ -13,8 +13,7 @@ ul, li, a {
 
 @font-face {
   font-family: 'sfpro';
-  /* src: url("musicthroughtheages.com/public/static/imported/fonts/SF-Pro-Text-Bold.otf") format("opentype"); */
-  src: local("SF-Pro-Text-Bold"), url("../imported/fonts/SF-Pro-Text-Bold.otf") format("opentype");
+  src: local("SF-Pro-Text-Bold"), url("../../static/imported/fonts/SF-Pro-Text-Bold.otf") format("opentype");
 }
 
 body {
