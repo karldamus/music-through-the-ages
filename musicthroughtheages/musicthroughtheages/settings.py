@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import sys 
 import os
+import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,8 +20,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 
 def find_or_create_secret_key():
     """ 
@@ -48,9 +46,23 @@ def find_or_create_secret_key():
 SECRET_KEY = find_or_create_secret_key()
 
 # SECURITY WARNING: don't run with debug turned on in production!
+#
+# todo: NOTE -- WHEN pushing to production,
+# todo: CHANGE THE STATIC_ROOT 
+# todo: AND MOVE STATIC FOLDER TO 'public'
+#
 DEBUG = True
 
-ALLOWED_HOSTS = ['musicthroughtheages.com', 'www.musicthroughtheages.com', '127.0.0.1:8000', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'musicthroughtheages.com', 
+    'www.musicthroughtheages.com', 
+    '127.0.0.1:8000', 
+    '127.0.0.1'
+    '0.0.0.0',
+    '192.168.0.19',
+    '127.0.0.1',
+]
+
 
 
 # Application definition
@@ -144,11 +156,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-# * STATIC_ROOT for both server and localhost -- dev purposes
+
 # STATIC_ROOT = '/home/dh_e658j5/musicthroughtheages.com/musicthroughtheages/static/' 
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATIC_ROOT = '/Users/karldamus/Documents/GitHub/music-through-the-ages/musicthroughtheages/static'
